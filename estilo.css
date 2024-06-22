@@ -8,14 +8,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .banner{
     
+    object-fit: cover;;
     justify-content: center;
-    
-    
-  background-color: #F5F5F5;
+    background-color: #F5F5F5;
 }
+
+.texto-video{
+    padding: 152px 91px;
+    background-color: #232628;
+    color: white;
+    display: flex;
+}
+
+.texto-video-box{
+    margin: 50px;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coluna{
+    padding-bottom: 41px;
+}
+
+.titulo-central{
+    padding-top: 41px;
+    padding-bottom: 41px;
+    text-align: center;
+}
+
+.botao-ver-mais{
+    padding-top: 41px;
+    padding-bottom: 41px;
+    text-align: center;
+}
+
 
