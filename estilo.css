@@ -33,14 +33,15 @@
 
 .barra-vermelho-cabecalho{
     margin-left: 20%;
-    width: 1022px;
+    width: 990px;
     height: 10px;
     background-color: red;
+    
     
 }
 
 .barra-vermelho-cabecalho1{
-    
+ 
     justify-content: end;
     align-items: end;
 }
