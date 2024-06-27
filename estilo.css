@@ -36,18 +36,14 @@
     width: 990px;
     height: 10px;
     background-color: red;
-    
-    
 }
 
 .barra-vermelho-cabecalho1{
- 
     justify-content: end;
     align-items: end;
 }
 
 .banner{
-    
     object-fit: cover;;
     justify-content: center;
     background-color: #F5F5F5;
