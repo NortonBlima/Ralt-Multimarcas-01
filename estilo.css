@@ -37,7 +37,7 @@
     margin-left: 20%;
     display: block;
     justify-content: flex-end;
-    padding-top: 18px;
+    padding-top: 19px;
 
 }
 
@@ -65,13 +65,11 @@
 
 .barra-vermelho-cabecalho1 {
     justify-content: flex-end;
-
 }
 
 .banner {
-
     object-fit: cover;
-    ;
+    
     justify-content: center;
     background-color: #F5F5F5;
 }
@@ -84,7 +82,7 @@
 }
 
 .texto-video-box {
-    margin: 50px;
+    margin: 5px;
 }
 
 .linha {
