@@ -92,9 +92,16 @@
     flex-wrap: wrap;
 }
 
+.destaque{
+    background-color: white;
+}
 .coluna {
     padding-bottom: 41px;
     border: 1px solid #000;
+}
+
+.foto-central{
+    
 }
 
 .titulo-central {
