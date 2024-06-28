@@ -2,7 +2,13 @@
     font-family: 'inter';
     src: url(fonts/Roboto/Roboto-Regular.ttf);
 }
-#Comentário
+
+#Comentário 
+.body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden
+}
 
 * {
     margin: 0;
@@ -19,6 +25,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .logo-cabecalho {
@@ -39,6 +46,7 @@
     display: block;
     justify-content: flex-end;
     padding-top: 19px;
+    padding-top: 20px;
 
 }
 
@@ -54,7 +62,7 @@
     text-decoration: none;
     color: white;
     margin-right: 5px;
-    
+
 }
 
 .barra-vermelho-cabecalho {
@@ -70,16 +78,51 @@
 
 .banner {
     object-fit: cover;
-    
+    object-fit: cover;
     justify-content: center;
     background-color: #F5F5F5;
 }
 
 .texto-video {
     padding: 152px 91px;
+}
+
+.apresentacao {
+    padding: 70px 152px 70px 0px;
     background-color: #232628;
     color: white;
     display: flex;
+    justify-content: space-between;
+}
+
+.texto-video-box {
+    display: flex;
+    flex-direction: column;
+    width: 709px;
+
+}
+
+.titulo-video {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra-vermelha-videos {
+    display: flex;
+    width: 709px;
+    height: 10px;
+    background-color: #D71F29;
+}
+
+.texto-do-video {
+    padding-left: 230px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-video-box2 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .texto-video-box {
@@ -92,16 +135,19 @@
     flex-wrap: wrap;
 }
 
-.destaque{
-    background-color: white;
-}
 .coluna {
     padding-bottom: 41px;
+    display: block;
     border: 1px solid #000;
+    height: 226px;
+    width: 304px;
+    overflow-x: hidden
 }
 
-.foto-central{
-    
+.foto-destaque {
+    height: 226px;
+    width: 288px;
+    overflow-x: hidden
 }
 
 .titulo-central {
