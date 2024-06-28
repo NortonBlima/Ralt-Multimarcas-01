@@ -86,7 +86,7 @@ body {
 
 
 .apresentacao {
-    padding: 70px 120px 70px 0px;
+    padding: 80px 120px 80px 0px;
     background-color: #232628;
     color: white;
     display: flex;
@@ -96,7 +96,7 @@ body {
 .texto-video-box{
     display: flex;
     flex-direction: column;
-    width: 629px;
+    width: 659px;
 
 }
 
@@ -107,7 +107,7 @@ body {
 
 .barra-vermelha-videos{
     display: flex;
-    width: 629px;
+    width: 659px;
     height: 10px;
     background-color: #D71F29;
 }
