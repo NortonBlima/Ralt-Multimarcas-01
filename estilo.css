@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    
+
 }
 
 * {
@@ -93,32 +93,33 @@ body {
     justify-content: space-between;
 }
 
-.texto-video-box{
+.texto-video-box {
     display: flex;
     flex-direction: column;
     width: 659px;
 
 }
 
-.titulo-video{
+.titulo-video {
     font-family: 'inter';
-    padding-left: 120px ;
+    padding-left: 120px;
 }
 
-.barra-vermelha-videos{
+.barra-vermelha-videos {
     display: flex;
     width: 659px;
     height: 10px;
     background-color: #D71F29;
 }
 
-.texto-do-video{
-    padding-left: 120px ;
+.texto-do-video {
+    padding-left: 120px;
     display: flex;
     justify-content: flex-end;
+    font-family: 'inter';
 }
 
-.texto-video-box2{
+.texto-video-box2 {
     display: flex;
     justify-content: flex-end;
 }
@@ -130,23 +131,93 @@ body {
 .linha {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .coluna {
-    padding-bottom: 41px;
     display: block;
+    padding-bottom: 41 px;
     border: 1px solid #000;
-    height: 226px;
-    width: 304px;
-    overflow-x: hidden
+    width: 268, 6px;
+    height: 403px;
+    background-color: #F8F8F8;
+
 }
 
-.foto-destaque {
-    height: 226px;
-    width: 288px;
-    overflow-x: hidden
+.foto-destaque {}
+
+.foto-destaque-box {}
+
+.descrição-destaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
+
+.titulo-do-carro-destaque {
+    display: flex;
+
+}
+
+.marca-barra-vercao {
+    display: flex;
+    flex-direction: column;
+}
+
+.marca {
+    font-size: 35px;
+    font-family: 'inter';
+}
+
+.vercao {
+    height: 42px;
+    font-size: 15px;
+    font-family: 'inter';
+}
+
+.ano-destaque {
+    font-size: 25px;
+    font-family: 'inter';
+    padding-right: 5px;
+}
+
+.barra-vermelho-destaque {
+    display: flex;
+    width: 212px;
+    height: 10px;
+    background-color: #D71F29;
+}
+
+.descrição-destaque-box {
+
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    
+}
+
+.km {
+    font-family: 'inter';
+}
+
+.valor {
+    padding-right: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;  
+    font-family: 'inter';
+    font-size: 20px;
+}
+
+.km {
+    padding-top: 5px;
+    display: flex;
+   align-items: flex-end; 
+    font-family: 'inter';
+}
+
 
 .titulo-central {
     padding-top: 41px;
