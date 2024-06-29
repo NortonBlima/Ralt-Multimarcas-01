@@ -137,9 +137,9 @@ body {
 .coluna {
     display: block;
     padding-bottom: 41 px;
-    border: 1px solid #000;
-    width: 268, 6px;
-    height: 403px;
+    border: 1px solid #000000;
+    width: 268px;
+    height: 399px;
     background-color: #F8F8F8;
 
 }
@@ -152,12 +152,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 .titulo-do-carro-destaque {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .marca-barra-vercao {
@@ -166,25 +166,31 @@ body {
 }
 
 .marca {
-    font-size: 35px;
+    padding-left: 5px;
+    font-size: 25px;
     font-family: 'inter';
 }
 
 .vercao {
-    height: 42px;
+    padding-left: 5px;
+    height: 62px;
     font-size: 15px;
-    font-family: 'inter';
-}
-
-.ano-destaque {
-    font-size: 25px;
     font-family: 'inter';
     padding-right: 5px;
 }
 
+.ano-destaque {
+    display: flex;
+    justify-content: flex-end; 
+    font-size: 22px;
+    font-family: 'inter';
+    padding-right: 5px;
+    
+}
+
 .barra-vermelho-destaque {
     display: flex;
-    width: 212px;
+    width: 193px;
     height: 10px;
     background-color: #D71F29;
 }
@@ -192,21 +198,23 @@ body {
 .descrição-destaque-box {
 
     display: flex;
-    height: 70px;
+    height: 60px;
     justify-content: space-between;
-    
+
 }
 
 .km {
+    padding-left: 5px;
+    padding-bottom: 5px;
     font-family: 'inter';
 }
 
 .valor {
     padding-right: 5px;
-    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;  
+    align-items: flex-end;
     font-family: 'inter';
     font-size: 20px;
 }
@@ -214,7 +222,7 @@ body {
 .km {
     padding-top: 5px;
     display: flex;
-   align-items: flex-end; 
+    align-items: flex-end;
     font-family: 'inter';
 }
 
@@ -223,21 +231,85 @@ body {
     padding-top: 41px;
     padding-bottom: 41px;
     text-align: center;
-}
+    font-family: 'inter';
 
+}
+.espacamento-do-botao{
+    height: 120px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .botao-ver-mais {
-    padding-top: 41px;
-    padding-bottom: 41px;
+    font-size: 25px;
+    font-family: 'inter';
+    background-color: #D71F29;
+    padding: 10px;
     text-align: center;
+    border: none;
+    color: white;
 }
 
 .localizacao {
-    padding: 152px 91px;
+    padding: 80px 0px 80px 120px;
     background-color: #232628;
     color: white;
     display: flex;
+    justify-content: space-between;
 }
 
 .texto-endereço-box {
-    margin: 50px;
+    
 }
+
+.texto-endereço-box{
+    display: flex;
+    flex-direction: column;
+    width: 659px;
+}
+
+.titulo-localisacao{
+    font-family: 'inter';
+    padding-right: 120px;
+}
+
+.barra-vermelha-localisacao{
+    display: flex;
+    width: 659px;
+    height: 10px;
+    background-color: #D71F29;
+}
+
+.texto-da-localisacao{
+    padding-right: 120px;
+    display: flex;
+    font-family: 'inter';
+}
+
+.galeria-de-fotos{
+    
+}
+
+
+.fotos-galeria{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.foto-500{
+    border : 1px solid #000000;
+    background-color:black
+}
+
+.foto-250{
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    background-color:black
+}
+
+.foto-2500{
+    border: 1px solid #000000;
+}
+
