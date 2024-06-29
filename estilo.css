@@ -77,8 +77,7 @@ body {
 }
 
 .banner {
-    object-fit: cover;
-    object-fit: cover;
+    
     justify-content: center;
     background-color: #F5F5F5;
 }
