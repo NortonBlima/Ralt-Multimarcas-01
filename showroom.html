@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,43 +15,527 @@
         href="https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="folha de estilo">
     <title>RALT Multimarcas</title>
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="justifiedGallery.min/justifiedGallery.min.css" />
+    <link rel="stylesheet" href="colorbox/example5/colorbox.css">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <header class="cabecalho">
-        <div>
-            <h1 class="logo-cabecalho"><img src="img/logo-ralt.png" alt="Ralt Multimarcas" height="63px"
-                    width="204px">
-            </h1>
-        </div>
-        <div>
-            <div class="menu-rede-social">
-                <div class="logo-rede-social"><a href="https://www.facebook.com/raltmultimarcas/"><img
-                            src="img/icon -facebook.png" alt="facebook" height="30px" width="30px"></a></div>
-                <div class="logo-rede-social"><a href="https://www.instagram.com/raltmultimarcas"><img
-                            src="img/icon-instagram.png" alt="instagram" height="30px" width="30px"></a></div>
-                <div class="logo-rede-social"><a href="https://www.tiktok.com/@raltmultimarcas?lang=pt-BR"><img
-                            src="img/icon-tiktok.png" alt="tik-tok" height="30px" width="30px"></a></div>
+    <main>
+        <header class="cabecalho">
+            <div>
+                <h1 class="logo-cabecalho"><a href="index.html"><img src="img/logo-ralt.png" alt="Ralt Multimarcas"
+                            height="63px" width="204px"></a>
+                </h1>
             </div>
-            <div class="menu-barra">
-                <div>
-                    <nav class="menu">
-                        <a class="menu-link" href="index.html">HOME </a>
-                        <p class="menu-link">|</p>
-                        <a class="menu-link" href="showroom.html">SHOWROOM </a>
-                        <p class="menu-link">|</p>
-                        <a class="menu-link" href="#"> QUEM NOS SOMOS </a>
-                        <p class="menu-link">|</p>
-                        <a class="menu-link" href="#"> LOCALIZAÇÃO </a>
-                        <p class="menu-link">|</p>
-                        <a class="menu-link" href="#"> CONTATO </a>
-                    </nav>
+            <div>
+                <div class="menu-rede-social">
+                    <div class="logo-rede-social"><a href="https://www.facebook.com/raltmultimarcas/"><img
+                                src="img/icon -facebook.png" alt="facebook" height="30px" width="30px"></a></div>
+                    <div class="logo-rede-social"><a href="https://www.instagram.com/raltmultimarcas"><img
+                                src="img/icon-instagram.png" alt="instagram" height="30px" width="30px"></a></div>
+                    <div class="logo-rede-social"><a href="https://api.whatsapp.com/send/?phone=5519996046685&text&type=phone_number&app_absent=0"><img
+                                src="img/icon-whasapp-png.png" alt="whats app" height="30px" width="30px"></a></div>
                 </div>
-                <div class="barra-vermelho-cabecalho1">
-                    <div class="barra-vermelho-cabecalho"></div>
+                <div class="menu-barra">
+                    <div>
+                        <nav class="menu">
+                            <a class="menu-link" href="index.html">HOME </a>
+                            <p class="menu-link">|</p>
+                            <a class="menu-link" href="showroom.html">SHOWROOM </a>
+                            <p class="menu-link">|</p>
+                            <a class="menu-link" href="index.html#apesentacao"> QUEM SOMOS </a>
+                            <p class="menu-link">|</p>
+                            <a class="menu-link" href="index.html#localizacao"> LOCALIZAÇÃO </a>
+                            <p class="menu-link">|</p>
+                            <a class="menu-link" href="https://api.whatsapp.com/send/?phone=5519996046685&text&type=phone_number&app_absent=0"> CONTATO </a>
+                        </nav>
+                    </div>
+                    <div class="barra-vermelho-cabecalho1">
+                        <div class="barra-vermelho-cabecalho"></div>
+                    </div>
                 </div>
             </div>
+        </header>
+        <div class="showroom">
+            <div class="titulo-showrrom">
+                <h1>SHOWROOM</h1>
+            </div>
+            <div class="filtro-estoque">
+                <div class="filtro">
+                    <div class="barra-vermelha-filtro"></div>
+                    <div class="seleção-marca">
+                        <div class="seleção-marca-titulo">
+                            <h4>VEÍCULO</h4>
+                        </div>
+                        <div class="seleção-marca-barra-de-pesquisa"><input type="text" class="txtbusca"
+                                placeholder="Marca,Modelo e Verção..." /></div>
+                    </div>
+                    <div class="barra-vermelha-filtro"></div>
+
+                    <div class="valor-filtro">
+                        <div class="seleção-marca-titulo">
+                            <h4>VALOR</h4>
+                        </div>
+                        <div class="valor-filtro-box">
+                            <div class="seleção-valor-baixo">
+                                <select class="seleciona-valor">
+                                    <option selected disabled> De </option>
+                                    <option value="1">R$10.000 </option>
+                                    <option value="2">R$30.000 </option>
+                                    <option value="3">R$40.000</option>
+                                    <option value="5">R$50.000 </option>
+                                    <option value="6">R$60.000 </option>
+                                    <option value="7">R$70.000 </option>
+                                    <option value="8">R$80.000 </option>
+                                    <option value="9">R$90.000 </option>
+                                    <option value="10">R$100.000</option>
+                                    <option value="11">R$110.000 </option>
+                                    <option value="12">R$120.000 </option>
+                                    <option value="13">R$130.000 </option>
+                                    <option value="14">R$140.000 </option>
+                                </select>
+                            </div>
+
+                            <div class="seleciona-valor">
+                                <select class="seleciona-valor">
+                                    <option selected disabled> Até</option>
+                                    <option value="1">R$10.000 </option>
+                                    <option value="2">R$30.000 </option>
+                                    <option value="3">R$40.000</option>
+                                    <option value="5">R$50.000 </option>
+                                    <option value="6">R$60.000 </option>
+                                    <option value="7">R$70.000 </option>
+                                    <option value="8">R$80.000 </option>
+                                    <option value="9">R$90.000 </option>
+                                    <option value="10">R$100.000</option>
+                                    <option value="11">R$110.000 </option>
+                                    <option value="12">R$120.000 </option>
+                                    <option value="13">R$130.000 </option>
+                                    <option value="14">R$140.000 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="barra-vermelha-filtro"></div>
+                    <div class="ano-filtro">
+                        <div class="seleção-marca-titulo">
+                            <h4>ANO</h4>
+                        </div>
+                        <div class="valor-filtro-box">
+                            <div class="seleciona-valor">
+                                <select class="seleciona-valor">
+                                    <option selected disabled> De </option>
+                                    <option value="1"> 2006 </option>
+                                    <option value="2"> 2007 </option>
+                                    <option value="3"> 2008</option>
+                                    <option value="5"> 2009 </option>
+                                    <option value="6"> 2010 </option>
+                                    <option value="7"> 2011 </option>
+                                    <option value="8"> 2012 </option>
+                                    <option value="9"> 2013 </option>
+                                    <option value="10"> 2014</option>
+                                    <option value="11"> 2015 </option>
+                                    <option value="12"> 2016 </option>
+                                    <option value="13"> 2017 </option>
+                                    <option value="14"> 2018 </option>
+                                    <option value="15"> 2019</option>
+                                    <option value="16"> 2020 </option>
+                                    <option value="17"> 2021 </option>
+                                    <option value="18"> 2022 </option>
+                                    <option value="19"> 2023 </option>
+                                </select>
+                            </div>
+                            <div class="seleciona-valor">
+                                <select class="seleciona-valor">
+                                    <option selected disabled> Até </option>
+                                    <option value="1"> 2006 </option>
+                                    <option value="2"> 2007 </option>
+                                    <option value="3"> 2008</option>
+                                    <option value="5"> 2009 </option>
+                                    <option value="6"> 2010 </option>
+                                    <option value="7"> 2011 </option>
+                                    <option value="8"> 2012 </option>
+                                    <option value="9"> 2013 </option>
+                                    <option value="10"> 2014</option>
+                                    <option value="11"> 2015 </option>
+                                    <option value="12"> 2016 </option>
+                                    <option value="13"> 2017 </option>
+                                    <option value="14"> 2018 </option>
+                                    <option value="15"> 2019</option>
+                                    <option value="16"> 2020 </option>
+                                    <option value="17"> 2021 </option>
+                                    <option value="18"> 2022 </option>
+                                    <option value="19"> 2023 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="barra-vermelha-filtro"></div>
+                    <div class="seleção-marca-titulo">
+                        <h4>KM</h4>
+                    </div>
+
+                    <div class="seleção-km">
+                        <select class="seleciona-km">
+                            <option selected disabled> Km </option>
+                            <option value="1"> 10.000 </option>
+                            <option value="2"> 30.000 </option>
+                            <option value="3"> 40.000</option>
+                            <option value="5"> 50.000 </option>
+                            <option value="6"> 60.000 </option>
+                            <option value="7"> 70.000 </option>
+                            <option value="8"> 80.000 </option>
+                            <option value="9"> 90.000 </option>
+                            <option value="10"> 100.000</option>
+                            <option value="11"> 110.000 </option>
+                            <option value="12"> 120.000 </option>
+                            <option value="13"> 130.000 </option>
+                            <option value="14"> 140.000 </option>
+                            <option value="15"> 150.000 </option>
+                            <option value="16"> 160.000</option>
+                            <option value="17"> 170.000 </option>
+                            <option value="18"> 180.000 </option>
+                            <option value="19"> 190.000 </option>
+                            <option value="20"> 200.000 </option>
+                        </select>
+                    </div>
+                    
+                    <div class="botao-aplicar-box">
+                        <button class="botao-aplicar">APLICAR</button>
+                    </div>
+                </div>
+                <div class="estoque">
+                    <div class="linha">
+                        <!-- 208 -->
+                        <div class="coluna"><a class="link1" href="peugeot208.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/208-coluna.png " height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>PEUGEOT</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2023</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>208 1.6 16V 4P FLEX ALLURE AUTOMÁTICO</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>32.431KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$81.900,00</h3>
+                                    </div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <!-- civic 2017 -->
+                        <div class="coluna"><a class="link1" href="hondacivic.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/civic-coluna.png " " height="226" width="268">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>HONDA</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2017</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>CIVIC 2.0 EX FLEX AUTOMÁTICO CVT</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>76.140KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$102.900,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- corolla -->
+                        <div class="coluna"><a class="link1" href="toyotacorolla.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/corolla-coluna.png " height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>TOYOTA</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2010</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>COROLLA 1.8 XLI FLEX AUTOMÁTICO</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>212.000KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$51.900,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- ecosoport -->
+                        <div class="coluna"><a class="link1" href="fordecosport.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/ecosport-coluna.png " height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>FORD</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2021</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>ECOSPORT 1.5 TI-VCT FLEX FREESTYLE AUTOMÁTICO</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>40.962KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$81.900,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- i30 -->
+                        <div class="coluna"><a class="link1" href="hyundaii30.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/i30-coluna.png " height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>HYUNDAI</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2016</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>I30 1.8 AUTOMÁTICO</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>99.546KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$82.900,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- ranger -->
+                        <div class="coluna"><a class="link1" href="fordranger.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/ranger-coluna.png" height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>FORD</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2017</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>RANGER 2.5 FLEX XLT CABINE DUPLA</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>90.999KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$116.900,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- tracker -->
+                        <div class="coluna"><a class="link1" href="chevrolettracker.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/tracker-coluna.png " height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>CHEVROLET</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2014</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>TRACKER 1.8 16V 4P FLEX LTZ AUTOMÁTICO</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>75.500KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$69.900,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- ETIOS -->
+                        <div class="coluna"><a class="link1" href="toyotaetios.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/etios-coluna.png " height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>TOYOTA</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2013</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>ETIOS HATCH 1.5 FLEX XLS</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>124.000KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$44.900,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- elantra -->
+                        <div class="coluna"><a class="link1" href="hyundaielantra.html">
+                            <div class="foto-destaque">
+                                <img class="foto-destaque-box" src="img/1-1-coluna/em-breve-coluna.png " height="226" width="288">
+                            </div>
+                            <div class="descrição-destaque">
+                                <div class="titulo-do-carro-destaque">
+                                    <div class="marca-barra-vercao">
+                                        <div class="marca">
+                                            <h3>HYUNDAI</h3>
+                                        </div>
+                                        <div class="barra-vermelho-destaque"></div>
+                                    </div>
+                                    <div class="ano-destaque">
+                                        <h3>2017</h3>
+                                    </div>
+                                </div>
+                                <div class="vercao">
+                                    <h3>ELANTRA 2.0 FLEX SPECIAL EDITION AUTOMÁTICO</h3>
+                                </div>
+                                <div class="descrição-destaque-box">
+                                    <div class="km">
+                                        <h3>00.000KM</h3>
+                                    </div>
+                                    <div class="valor">
+                                        <h3>R$00.000,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </header>
-    
+        <footer class="roda-pe">
+            <div class="roda-pe-ajuste">
+                <div class="barra-vermelha-roda-pe"></div>
+                <div class="roda-pe-infor">
+                    <div class="logo-roda-pe">
+                        <h1 class="logo-roda-pe-box"><img src="img/logo-ralt.png" alt="Ralt Multimarcas" height="73px"
+                                width="214px">
+                        </h1>
+                    </div>
+                    <div class="horario">
+                        <div class="titulo-horario">
+                            <h3>HORARIO</h3>
+                        </div>
+                        <div class="os-horario">
+                            <P>Segunda a Sexta: 08:00 - 18:00<BR>Sábado: 08:00 - 13:00<BR>Domingo: Fechado</P>
+                        </div>
+                    </div>
+                    <div class="rede-social-roda-pe">
+                        <div class="titulo-rede-social-roda-pe">
+                            <h3>REDE SOCIAL</h3>
+                        </div>
+                        <div class="icone-rede-social-roda-pe">
+                            <div class="icone-rede-social"><a href="https://www.facebook.com/raltmultimarcas/"><img
+                                        src="img/icon -facebook.png" alt="facebook" height="30px" width="30px"></a>
+                            </div>
+                            <div class="icone-rede-social"><a href="https://www.instagram.com/raltmultimarcas"><img
+                                        src="img/icon-instagram.png" alt="instagram" height="30px" width="30px"></a>
+                            </div>
+                            <div class="icone-rede-social"><a
+                                    href="https://api.whatsapp.com/send/?phone=5519996046685&text&type=phone_number&app_absent=0"><img
+                                        src="img/icon-whasapp-png.png" alt="whats app" height="30px" width="30px"></a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+
+    </main>
 </body>
-</html>

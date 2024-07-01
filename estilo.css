@@ -4,10 +4,15 @@
 }
 
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     width: 100%;
     height: 100%;
-
 }
 
 * {
@@ -17,6 +22,20 @@ body {
     overflow-x: hidden
 }
 
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link1 {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.test-verde {
+    background-color: chartreuse;
+    height: 3000px;
+}
 
 .cabecalho {
     background-color: #232628;
@@ -29,7 +48,10 @@ body {
 }
 
 .logo-cabecalho {
-    padding: 41px 53px 17px;
+    padding-top: 15px;
+    padding-left: 53px;
+    cursor: pointer;
+    overflow-x: hidden
 }
 
 .menu-rede-social {
@@ -39,6 +61,7 @@ body {
 
 .logo-rede-social {
     padding: 10px;
+    cursor: pointer;
 }
 
 .menu-barra {
@@ -62,7 +85,7 @@ body {
     text-decoration: none;
     color: white;
     margin-right: 5px;
-
+    cursor: pointer;
 }
 
 .barra-vermelho-cabecalho {
@@ -77,7 +100,7 @@ body {
 }
 
 .banner {
-    
+
     justify-content: center;
     background-color: #F5F5F5;
 }
@@ -112,6 +135,7 @@ body {
 }
 
 .texto-do-video {
+    padding-top: 5px;
     padding-left: 120px;
     display: flex;
     justify-content: flex-end;
@@ -130,7 +154,7 @@ body {
 .linha {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .coluna {
@@ -140,12 +164,16 @@ body {
     width: 268px;
     height: 399px;
     background-color: #F8F8F8;
-
+    cursor: pointer;
 }
 
-.foto-destaque {}
+.foto-destaque {
+}
 
-.foto-destaque-box {}
+.foto-destaque-box {
+    height: 226px;
+    width: 268px;
+}
 
 .descrição-destaque {
     display: flex;
@@ -172,19 +200,21 @@ body {
 
 .vercao {
     padding-left: 5px;
+    padding-top: 5px;
     height: 62px;
     font-size: 15px;
     font-family: 'inter';
     padding-right: 5px;
+    color: #414141;
 }
 
 .ano-destaque {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     font-size: 22px;
     font-family: 'inter';
     padding-right: 5px;
-    
+
 }
 
 .barra-vermelho-destaque {
@@ -233,13 +263,17 @@ body {
     font-family: 'inter';
 
 }
-.espacamento-do-botao{
-    height: 120px;  
+
+.acabamento-do-botao {
+    text-decoration: none;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .botao-ver-mais {
+    text-decoration: none;
     font-size: 25px;
     font-family: 'inter';
     background-color: #D71F29;
@@ -257,127 +291,401 @@ body {
     justify-content: space-between;
 }
 
-.texto-endereço-box {
-    
-}
+.texto-endereço-box {}
 
-.texto-endereço-box{
+.texto-endereço-box {
     display: flex;
     flex-direction: column;
     width: 659px;
 }
 
-.titulo-localisacao{
+.titulo-localisacao {
     font-family: 'inter';
     padding-right: 120px;
 }
 
-.barra-vermelha-localisacao{
+.barra-vermelha-localisacao {
     display: flex;
     width: 659px;
     height: 10px;
     background-color: #D71F29;
 }
 
-.texto-da-localisacao{
+.texto-da-localisacao {
     padding-right: 120px;
     display: flex;
     font-family: 'inter';
 }
 
-.galeria-de-fotos{
-    
-}
+.galeria-de-fotos {}
 
 
-.fotos-galeria{
+.fotos-galeria {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.foto-500{
-    border : 1px solid #000000;
-    background-color:black
+.foto-500 {
+    border: 1px solid #000000;
+    background-color: black
 }
 
-.foto-250{
+.foto-250 {
     border: 1px solid #000000;
     display: flex;
     flex-direction: column;
-    background-color:black
+    background-color: black
 }
 
-.foto-2500{
+.foto-2500 {
     border: 1px solid #000000;
 }
 
-.roda-pe{
+.roda-pe {
     background-color: #232628;
     height: 200px;
 }
 
-.roda-pe-ajuste{
+.roda-pe-ajuste {
     display: flex;
     flex-direction: column;
     width: 1080px;
 }
 
-.barra-vermelha-roda-pe{
+.barra-vermelha-roda-pe {
     display: flex;
     width: 1080px;
     height: 10px;
     background-color: #D71F29;
 }
 
-.roda-pe-infor{
+.roda-pe-infor {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     padding: 25px 0px 25px 40px;
 
 
 }
 
-.logo-roda-pe{
-}
+.logo-roda-pe {}
 
-.logo-roda-pe-box{
-    
-}
+.logo-roda-pe-box {}
 
-.horario{
+.horario {
     display: flex;
     flex-direction: column;
 }
 
-.titulo-horario{
+.titulo-horario {
     font-family: 'inter';
     color: white;
 }
 
-.os-horario{
+.os-horario {
     padding-top: 10px;
     font-family: 'inter';
     color: white;
 }
 
-.rede-social-roda-pe{
+.rede-social-roda-pe {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.titulo-rede-social-roda-pe{
+.titulo-rede-social-roda-pe {
     font-family: 'inter';
     color: white;
 }
 
-.icone-rede-social-roda-pe{
+.icone-rede-social-roda-pe {
     padding-top: 10px;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-.icone-rede-social{}
+.icone-rede-social {}
 
+.titulo-showrrom {
+    width: auto;
+    display: flex;
+    font-family: 'inter';
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtro-estoque {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtro {
+    width: 250px;
+    height: 450px;
+    background-color: rgb(236, 236, 236);
+
+}
+
+.estoque {
+    display: flex;
+    width: 1078px;
+    padding-bottom: 50px;
+}
+
+
+.barra-vermelha-filtro {
+    display: flex;
+    width: 250px;
+    height: 10px;
+    background-color: #D71F29;
+}
+
+.seleção-marca {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    flex-direction: column;
+
+}
+
+.seleção-marca-titulo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    display: flex;
+    font-size: 21px;
+}
+
+.seleção-marca-barra-de-pesquisa {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.txtbusca {
+    float: left;
+    background-color: white;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 16px;
+    border: none;
+    height: 32px;
+    width: 200px;
+    color: grey;
+}
+
+.valor-filtro-box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.seleciona-valor {
+    float: left;
+    background-color: white;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 16px;
+    border: none;
+    height: 28px;
+    width: 82px;
+    color: grey;
+    cursor: pointer;
+}
+
+.seleção-km {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.seleciona-km {
+    float: left;
+    background-color: white;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 16px;
+    border: none;
+    height: 28px;
+    width: 200px;
+    color: grey;
+    cursor: pointer;
+}
+
+.botao-aplicar {
+    font-size: 25px;
+    font-family: 'inter';
+    background-color: #D71F29;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.botao-aplicar-box {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.titulo-marca-modelo-verca-ano {
+
+    display: flex;
+    font-family: 'inter';
+    padding: 50px 0px;
+    width: 1000px;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #232628;
+
+}
+
+.foto-carro-slide {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+
+}
+
+.corpo-alinhado {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 171.5px;
+    padding-right: 171.5px;
+
+
+}
+
+.foto-carro {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-carro-box {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 600px;
+}
+
+
+.informacao-box {
+    width: 1000px;
+}
+
+.fundo-cinza {
+    margin-top: 50px;
+    width: 1000px;
+    background-color: #232628;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fundo-cinza-titulo {
+
+    padding: 25px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.barra-vermelha-fundo-cinza {
+    background-color: #D71F29;
+    display: flex;
+    justify-content: end;
+    width: 600px;
+    height: 10px;
+    align-items: end;
+}
+
+.fundobranco {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e4e4e4;
+    width: 1000px;
+    padding: 10px 20px;
+
+}
+
+.fundobrancobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mine-titulo-informacao {
+    font-size: 18px;
+    font-family: 'inter';
+}
+
+.mine-informacao {
+    font-size: 30px;
+    font-family: 'inter';
+}
+
+.fundo-branco-ordena {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e4e4e4;
+    width: 1000px;
+    padding: 25px 20px;
+    font-size: 18px;
+}
+
+.fundobranco1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #e4e4e4;
+    width: 1000px;
+    padding: 10px 20px;
+}
+
+.medio-titulo-tecnico {
+    font-size: 20PX;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+
+.mine-titulo-tecnico {
+    font-size: 18px;
+    font-family: 'inter';
+    text-align: center;
+}
+
+.mine-tecnico {
+    font-size: 18px;
+    font-family: 'inter';
+    color: rgb(48, 48, 48);
+    text-align: center;
+}
+
+.fundobrancobox1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 50px;
+}
