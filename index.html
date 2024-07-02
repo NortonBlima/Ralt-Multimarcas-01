@@ -70,18 +70,20 @@
         </header>
         <div>
             <div class="banner">
-                <div><img src="img/banner/208-banner.png" alt="208" height="500px" width="1343px"></div>
-                <div><img src="img/banner/civic2011-banner.png" alt="Civic" height="500px" width="1343px"></div>
-                <div><img src="img/banner/prisma-banner.png" alt="prisma" height="500px" width="1343px"></div>
+                <div class="banner"><img src="img/banner/208-banner.png" alt="208"></div>
+                <div class="banner"><img src="img/banner/civic2011-banner.png" alt="Civic"></div>
+                <div class="banner"><img src="img/banner/prisma-banner.png" alt="prisma"></div>
             </div>
 
             <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
             <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script type="text/javascript" src="slick/slick.min.js"></script>
             <script>
-                $('.banner').slick(
+                $('.banner').slick({
                     
-                )
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                })
             </script>
         </div>
         <div class="apresentacao">
@@ -332,32 +334,34 @@
                 </div>
                 <div class="foto-250">
                     <div>
-                        <a class="group1" href="img/conheca-nossa-estrutura/showroom-250x250.png" title="Honda civic"><img
-                            class="foto-2500" src="img/conheca-nossa-estrutura/showroom-250x250.png" height="250"
-                            width="250"></a>
-                </div>
-                <div>
-                    <a class="group1" href="img/conheca-nossa-estrutura/showroom2-250x250.png" title="Honda civic"><img
-                            class="foto-2500" src="img/conheca-nossa-estrutura/showroom2-250x250.png" height="250"
-                            width="250"></a>
+                        <a class="group1" href="img/conheca-nossa-estrutura/showroom-250x250.png"
+                            title="Honda civic"><img class="foto-2500"
+                                src="img/conheca-nossa-estrutura/showroom-250x250.png" height="250" width="250"></a>
+                    </div>
+                    <div>
+                        <a class="group1" href="img/conheca-nossa-estrutura/showroom2-250x250.png"
+                            title="Honda civic"><img class="foto-2500"
+                                src="img/conheca-nossa-estrutura/showroom2-250x250.png" height="250" width="250"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="acabamento-do-botao"><a name="localizacao"></a>
-            <button class="botao-ver-mais"><a class="link" href="https://www.google.co.uk/search?q=ralt+multimarcas&sca_esv=4cb9e1f4d5fda1fa&sca_upv=1&source=hp&ei=OkOCZunBE5Dc1sQPpPugmA0&iflsig=AL9hbdgAAAAAZoJRSphuRx93DZHZ8kstuDN6oYjFtiYT&gs_ssp=eJzj4tVP1zc0zCpPL0zJLjMzYLRSNaiwNEm2sEwyMTWwNDFPTko1tzKoSDYwsDBOMTY2TTKxNEm0NPISKErMKVHILc0pycxNLEpOLAYA7fgVmQ&oq=ralt&gs_lp=Egdnd3Mtd2l6IgRyYWx0KgIIADIOEC4YgAQYxwEYjgUYrwEyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgARI7BZQAFjhBHAAeACQAQCYAWKgAfsCqgEBNLgBAcgBAPgBAZgCBKACjQPCAgsQLhiABBixAxiDAcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIREC4YgAQYsQMY0QMYgwEYxwHCAgUQLhiABMICDhAuGIAEGLEDGIMBGIoFmAMAkgcDMi4yoAehMQ&sclient=gws-wiz#lpg=cid:CgIgAQ%3D%3D,ik:CAoSLEFGMVFpcE1ELWp4b3g1Ul9lWTRwNGMwX2l2LTljSXIzZGdzVWhsREtKUEsx">VER MAIS</a></button>
-        </div>
 
-        <script src="jquery-1.11.0.min.js"></script>
-        <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
-        <script src="colorbox/jquery.colorbox.js"></script>
+            <div class="acabamento-do-botao"><a name="localizacao"></a>
+                <button class="botao-ver-mais"><a class="link"
+                        href="https://www.google.co.uk/search?q=ralt+multimarcas&sca_esv=4cb9e1f4d5fda1fa&sca_upv=1&source=hp&ei=OkOCZunBE5Dc1sQPpPugmA0&iflsig=AL9hbdgAAAAAZoJRSphuRx93DZHZ8kstuDN6oYjFtiYT&gs_ssp=eJzj4tVP1zc0zCpPL0zJLjMzYLRSNaiwNEm2sEwyMTWwNDFPTko1tzKoSDYwsDBOMTY2TTKxNEm0NPISKErMKVHILc0pycxNLEpOLAYA7fgVmQ&oq=ralt&gs_lp=Egdnd3Mtd2l6IgRyYWx0KgIIADIOEC4YgAQYxwEYjgUYrwEyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgARI7BZQAFjhBHAAeACQAQCYAWKgAfsCqgEBNLgBAcgBAPgBAZgCBKACjQPCAgsQLhiABBixAxiDAcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIREC4YgAQYsQMY0QMYgwEYxwHCAgUQLhiABMICDhAuGIAEGLEDGIMBGIoFmAMAkgcDMi4yoAehMQ&sclient=gws-wiz#lpg=cid:CgIgAQ%3D%3D,ik:CAoSLEFGMVFpcE1ELWp4b3g1Ul9lWTRwNGMwX2l2LTljSXIzZGdzVWhsREtKUEsx">VER
+                        MAIS</a></button>
+            </div>
 
-        <script>
-            $('#fotos-galeriaid').justifiedGallery()
-            $('.foto-2500.gro
-            ).colorbox()
+            <script src="jquery-1.11.0.min.js"></script>
+            <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
+            <script src="colorbox/jquery.colorbox.js"></script>
 
-        </script>
+            <script>
+                $('#fotos-galeriaid').justifiedGallery()
+                $('.foto-2500.gro
+                ).colorbox()
+
+            </script>
 
         </div>
         <footer class="roda-pe">
